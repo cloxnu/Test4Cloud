@@ -14,6 +14,7 @@
 		28E2C3DB2AA4636900DA13C7 /* Test4CloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2C3DA2AA4636900DA13C7 /* Test4CloudTests.swift */; };
 		28E2C3E52AA4636900DA13C7 /* Test4CloudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2C3E42AA4636900DA13C7 /* Test4CloudUITests.swift */; };
 		28E2C3E72AA4636900DA13C7 /* Test4CloudUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2C3E62AA4636900DA13C7 /* Test4CloudUITestsLaunchTests.swift */; };
+		28E2C3FB2AA474D000DA13C7 /* TestPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 28E2C3FA2AA474D000DA13C7 /* TestPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E2C3FB2AA474D000DA13C7 /* TestPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = Test4Cloud;
+			packageProductDependencies = (
+				28E2C3FA2AA474D000DA13C7 /* TestPackage */,
+			);
 			productName = Test4Cloud;
 			productReference = 28E2C3C62AA4636600DA13C7 /* Test4Cloud.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 28E2C3BD2AA4636600DA13C7;
+			packageReferences = (
+				28E2C3F92AA474D000DA13C7 /* XCRemoteSwiftPackageReference "Cluster" */,
+			);
 			productRefGroup = 28E2C3C72AA4636600DA13C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28E2C3F92AA474D000DA13C7 /* XCRemoteSwiftPackageReference "Cluster" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/efremidze/Cluster";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28E2C3FA2AA474D000DA13C7 /* TestPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28E2C3F92AA474D000DA13C7 /* XCRemoteSwiftPackageReference "Cluster" */;
+			productName = TestPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28E2C3BE2AA4636600DA13C7 /* Project object */;
 }
